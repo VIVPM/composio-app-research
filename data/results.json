@@ -17,8 +17,8 @@
       "notes": "REST, SOAP, Bulk, GraphQL \u00b7 184 Composio tools"
     },
     "existing_mcp": {
-      "has": false,
-      "url": ""
+      "has": true,
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html"
     },
     "composio_supported": true,
     "composio_slug": "salesforce",
@@ -30,7 +30,7 @@
       "https://developer.salesforce.com/docs"
     ],
     "confidence": "high",
-    "verified": false
+    "verified": true
   },
   {
     "id": 2,
@@ -85,8 +85,8 @@
       "notes": "v1/v2 REST \u00b7 399 Composio tools"
     },
     "existing_mcp": {
-      "has": false,
-      "url": ""
+      "has": true,
+      "url": "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants"
     },
     "composio_supported": true,
     "composio_slug": "pipedrive",
@@ -98,7 +98,7 @@
       "https://developers.pipedrive.com/docs/api/v1"
     ],
     "confidence": "high",
-    "verified": false
+    "verified": true
   },
   {
     "id": 4,
@@ -217,8 +217,8 @@
       "notes": "57 Composio tools"
     },
     "existing_mcp": {
-      "has": false,
-      "url": ""
+      "has": true,
+      "url": "https://www.zoho.com/crm/developer/mcp.html"
     },
     "composio_supported": true,
     "composio_slug": "zoho",
@@ -230,7 +230,7 @@
       "https://www.zoho.com/crm/developer/docs/api/v6/"
     ],
     "confidence": "high",
-    "verified": false
+    "verified": true
   },
   {
     "id": 8,
@@ -347,8 +347,8 @@
       "notes": "452 Composio tools"
     },
     "existing_mcp": {
-      "has": false,
-      "url": ""
+      "has": true,
+      "url": "https://support.zendesk.com/hc/en-us/articles/10497779528730"
     },
     "composio_supported": true,
     "composio_slug": "zendesk",
@@ -360,7 +360,7 @@
       "https://developer.zendesk.com/api-reference"
     ],
     "confidence": "high",
-    "verified": false
+    "verified": true
   },
   {
     "id": 12,
@@ -1174,8 +1174,8 @@
       "notes": "225 Composio tools"
     },
     "existing_mcp": {
-      "has": false,
-      "url": ""
+      "has": true,
+      "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server"
     },
     "composio_supported": true,
     "composio_slug": "klaviyo",
@@ -1187,7 +1187,7 @@
       "https://developers.klaviyo.com"
     ],
     "confidence": "high",
-    "verified": false
+    "verified": true
   },
   {
     "id": 37,
@@ -1395,7 +1395,7 @@
       "OAuth2",
       "Token"
     ],
-    "auth_source": "llm_knowledge",
+    "auth_source": "llm_knowledge+web",
     "access": "self_serve",
     "gate_type": "trial",
     "api_surface": {
@@ -1404,8 +1404,8 @@
       "notes": "store API tokens"
     },
     "existing_mcp": {
-      "has": false,
-      "url": ""
+      "has": true,
+      "url": "https://www.bigcommerce.com/blog/storefront-mcp/"
     },
     "composio_supported": false,
     "composio_slug": null,
@@ -1416,7 +1416,7 @@
       "https://developer.bigcommerce.com/docs"
     ],
     "confidence": "high",
-    "verified": false
+    "verified": true
   },
   {
     "id": 44,
@@ -2357,8 +2357,8 @@
       "notes": "PAT / OAuth \u00b7 24 Composio tools"
     },
     "existing_mcp": {
-      "has": false,
-      "url": ""
+      "has": true,
+      "url": "https://mcp.airtable.com/mcp"
     },
     "composio_supported": true,
     "composio_slug": "airtable",
@@ -2370,7 +2370,7 @@
       "https://airtable.com/developers/web/api/introduction"
     ],
     "confidence": "high",
-    "verified": false
+    "verified": true
   },
   {
     "id": 73,
@@ -2525,8 +2525,8 @@
       "notes": "personal token / OAuth \u00b7 162 Composio tools"
     },
     "existing_mcp": {
-      "has": false,
-      "url": ""
+      "has": true,
+      "url": "https://mcp.clickup.com/mcp"
     },
     "composio_supported": true,
     "composio_slug": "clickup",
@@ -2538,7 +2538,7 @@
       "https://clickup.com/api"
     ],
     "confidence": "high",
-    "verified": false
+    "verified": true
   },
   {
     "id": 78,
@@ -2819,8 +2819,8 @@
       "notes": "free dev + sandbox \u00b7 114 Composio tools"
     },
     "existing_mcp": {
-      "has": false,
-      "url": ""
+      "has": true,
+      "url": "https://github.com/intuit/quickbooks-online-mcp-server"
     },
     "composio_supported": true,
     "composio_slug": "quickbooks",
@@ -2832,7 +2832,7 @@
       "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account"
     ],
     "confidence": "high",
-    "verified": false
+    "verified": true
   },
   {
     "id": 87,
@@ -2852,8 +2852,8 @@
       "notes": "free dev + demo org \u00b7 53 Composio tools"
     },
     "existing_mcp": {
-      "has": false,
-      "url": ""
+      "has": true,
+      "url": "https://github.com/XeroAPI/xero-mcp-server"
     },
     "composio_supported": true,
     "composio_slug": "xero",
@@ -2865,7 +2865,7 @@
       "https://developer.xero.com/documentation/api/accounting/overview"
     ],
     "confidence": "high",
-    "verified": false
+    "verified": true
   },
   {
     "id": 88,
@@ -2886,8 +2886,8 @@
       "notes": "must be a Brex customer \u00b7 84 Composio tools"
     },
     "existing_mcp": {
-      "has": false,
-      "url": ""
+      "has": true,
+      "url": "https://developer.brex.com/docs/mcp"
     },
     "composio_supported": true,
     "composio_slug": "brex",
@@ -2899,7 +2899,7 @@
       "https://developer.brex.com"
     ],
     "confidence": "med",
-    "verified": false
+    "verified": true
   },
   {
     "id": 89,
@@ -3050,8 +3050,8 @@
       "notes": "API in beta \u00b7 7 Composio tools"
     },
     "existing_mcp": {
-      "has": false,
-      "url": ""
+      "has": true,
+      "url": "https://developers.fathom.ai/mcp-docs"
     },
     "composio_supported": true,
     "composio_slug": "fathom",
@@ -3063,7 +3063,7 @@
       "https://fathom.video"
     ],
     "confidence": "low",
-    "verified": false
+    "verified": true
   },
   {
     "id": 94,
@@ -3268,7 +3268,7 @@
       "API key",
       "OAuth2"
     ],
-    "auth_source": "llm_knowledge",
+    "auth_source": "llm_knowledge+web",
     "access": "self_serve",
     "gate_type": "paid",
     "api_surface": {
@@ -3277,8 +3277,8 @@
       "notes": "API for customers"
     },
     "existing_mcp": {
-      "has": false,
-      "url": ""
+      "has": true,
+      "url": "https://grain.com/release-note/06-18-2025"
     },
     "composio_supported": false,
     "composio_slug": null,
@@ -3289,6 +3289,6 @@
       "https://grain.com"
     ],
     "confidence": "low",
-    "verified": false
+    "verified": true
   }
 ]

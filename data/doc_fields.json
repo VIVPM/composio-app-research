@@ -1,111 +1,2554 @@
 {
-  "1":  {"description":"Enterprise CRM and sales cloud platform","auth_methods":["OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST/SOAP","breadth":"broad","notes":"REST, SOAP, Bulk, GraphQL"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developer.salesforce.com/docs"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "2":  {"description":"CRM and inbound marketing platform","auth_methods":["OAuth2","API key"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"private apps + OAuth"},"existing_mcp":{"has":true,"url":"https://developers.hubspot.com/mcp"},"buildability":"buildable_today","blocker":"","evidence":["https://developers.hubspot.com/docs/api/overview"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "3":  {"description":"Sales-focused CRM for pipelines","auth_methods":["API key","OAuth2"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"broad","notes":"v1/v2 REST"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developers.pipedrive.com/docs/api/v1"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "4":  {"description":"Modern data-model CRM for startups","auth_methods":["OAuth2","API key"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"medium","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developers.attio.com"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "5":  {"description":"Open-source CRM, self-hostable","auth_methods":["API key","Token"],"access":"self_serve","gate_type":"free","api_surface":{"type":"GraphQL/REST","breadth":"medium","notes":"GraphQL + REST, self-host"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://twenty.com/developers"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "6":  {"description":"Work/collaboration platform with CRM apps","auth_methods":["OAuth2","API key"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"medium","notes":"Citrix Podio API"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developers.podio.com"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "7":  {"description":"Zoho's cloud CRM suite","auth_methods":["OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://www.zoho.com/crm/developer/docs/api/v6/"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "8":  {"description":"Inside-sales CRM with calling","auth_methods":["API key"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"medium","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developer.close.com"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "9":  {"description":"CRM for Google Workspace users","auth_methods":["API key"],"access":"gated","gate_type":"paid","api_surface":{"type":"REST","breadth":"medium","notes":"customer-only API token"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"must be a paying Copper customer","evidence":["https://developer.copper.com"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "10": {"description":"CRM/deal platform for private capital","auth_methods":["OAuth2"],"access":"gated","gate_type":"contact_sales","api_surface":{"type":"REST","breadth":"medium","notes":"Intapp DealCloud"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"enterprise-only; API access via account/partner","evidence":["https://api.docs.dealcloud.com"],"confidence":"med","source":"llm_knowledge","verified":false},
-
-  "11": {"description":"Customer support and ticketing suite","auth_methods":["OAuth2","API key"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"broad","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developer.zendesk.com/api-reference"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "12": {"description":"Customer messaging and support platform","auth_methods":["OAuth2"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"broad","notes":""},"existing_mcp":{"has":true,"url":"https://developers.intercom.com/docs/guides/mcp"},"buildability":"buildable_today","blocker":"","evidence":["https://developers.intercom.com"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "13": {"description":"Cloud helpdesk by Freshworks","auth_methods":["API key"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"broad","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developers.freshdesk.com/api"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "14": {"description":"Shared inbox and customer ops","auth_methods":["OAuth2","Token"],"access":"gated","gate_type":"paid","api_surface":{"type":"REST","breadth":"medium","notes":"customer-only"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"requires paid Front account","evidence":["https://dev.frontapp.com"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "15": {"description":"B2B support platform for modern teams","auth_methods":["API key","OAuth2"],"access":"gated","gate_type":"paid","api_surface":{"type":"REST","breadth":"narrow","notes":"customer-only"},"existing_mcp":{"has":true,"url":"https://docs.usepylon.com/pylon-docs/developer/mcp"},"buildability":"buildable_today","blocker":"requires paid Pylon account","evidence":["https://docs.usepylon.com"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "16": {"description":"Helpdesk with ticketing and live chat","auth_methods":["API key"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"medium","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://liveagent.com/api"],"confidence":"low","source":"llm_knowledge","verified":false},
-  "17": {"description":"Developer-first B2B support tool","auth_methods":["API key"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"GraphQL","breadth":"medium","notes":"GraphQL API"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://www.plain.com/docs/api-reference/graphql"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "18": {"description":"Simple helpdesk and shared inbox","auth_methods":["OAuth2"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"medium","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developer.helpscout.com"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "19": {"description":"Helpdesk built for ecommerce","auth_methods":["API key","OAuth2"],"access":"gated","gate_type":"paid","api_surface":{"type":"REST","breadth":"medium","notes":"customer-only"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"requires paid Gorgias account","evidence":["https://developers.gorgias.com"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "20": {"description":"Customer service platform, people-centric","auth_methods":["API key"],"access":"gated","gate_type":"contact_sales","api_surface":{"type":"REST","breadth":"medium","notes":"enterprise"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"enterprise sales gate for access","evidence":["https://developer.gladly.com"],"confidence":"low","source":"llm_knowledge","verified":false},
-
-  "21": {"description":"Team messaging and collaboration","auth_methods":["OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"Web API + events"},"existing_mcp":{"has":true,"url":"https://github.com/slackapi"},"buildability":"buildable_today","blocker":"","evidence":["https://api.slack.com"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "22": {"description":"Programmable SMS, voice, messaging APIs","auth_methods":["Basic","API key"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"broad","notes":"Account SID + auth token / API keys"},"existing_mcp":{"has":true,"url":"https://github.com/twilio-labs/mcp"},"buildability":"buildable_today","blocker":"","evidence":["https://www.twilio.com/docs/usage/api"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "23": {"description":"Zoho's team chat app","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"medium","notes":"webhooks + REST"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://www.zoho.com/cliq/help/restapi/"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "24": {"description":"Lark/Feishu collaboration suite (open platform)","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"tenant/app access tokens"},"existing_mcp":{"has":true,"url":"https://github.com/larksuite/lark-openapi-mcp"},"buildability":"buildable_today","blocker":"","evidence":["https://open.larksuite.com/document"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "25": {"description":"Free team messaging app","auth_methods":["API key","Token"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"narrow","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"limited/newer public API","evidence":["https://pumble.com/developers"],"confidence":"low","source":"llm_knowledge","verified":false},
-  "26": {"description":"Voice/chat community platform","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"bot token + OAuth2"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://discord.com/developers/docs"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "27": {"description":"Messaging app with bot API","auth_methods":["Token"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"Bot API + MTProto"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://core.telegram.org/bots/api"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "28": {"description":"WhatsApp Business messaging (Cloud API)","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"admin_approval","api_surface":{"type":"REST","breadth":"medium","notes":"Graph API"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"business verification + phone number approval","evidence":["https://developers.facebook.com/docs/whatsapp"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "29": {"description":"Cloud phone system for teams","auth_methods":["Basic","OAuth2"],"access":"gated","gate_type":"paid","api_surface":{"type":"REST","breadth":"medium","notes":"customer-only"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"requires paid Aircall account","evidence":["https://developer.aircall.io"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "30": {"description":"Communications APIs (SMS, voice, verify)","auth_methods":["API key","OAuth2"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"broad","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developer.vonage.com"],"confidence":"high","source":"llm_knowledge","verified":false},
-
-  "31": {"description":"Search/display advertising platform","auth_methods":["OAuth2"],"access":"gated","gate_type":"admin_approval","api_surface":{"type":"REST/gRPC","breadth":"broad","notes":"developer token needs approval"},"existing_mcp":{"has":true,"url":"https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"},"buildability":"partial","blocker":"developer token requires Google approval","evidence":["https://developers.google.com/google-ads/api/docs/get-started/introduction"],"confidence":"high","source":"llm_knowledge+web","verified":true},
-  "32": {"description":"Meta (Facebook/Instagram) advertising APIs","auth_methods":["OAuth2"],"access":"self_serve","gate_type":"admin_approval","api_surface":{"type":"REST","breadth":"broad","notes":"Marketing API; advanced access needs review"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"advanced access requires App Review","evidence":["https://developers.facebook.com/docs/marketing-apis"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "33": {"description":"LinkedIn advertising / marketing APIs","auth_methods":["OAuth2"],"access":"gated","gate_type":"partner","api_surface":{"type":"REST","breadth":"medium","notes":"Marketing Developer Platform"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"Marketing Developer Platform access approval","evidence":["https://learn.microsoft.com/en-us/linkedin/marketing/"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "34": {"description":"Agency CRM/marketing all-in-one","auth_methods":["OAuth2"],"access":"self_serve","gate_type":"paid","api_surface":{"type":"REST","breadth":"broad","notes":"API v2"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"requires paid GoHighLevel account","evidence":["https://highlevel.stoplight.io"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "35": {"description":"Email marketing and automation","auth_methods":["OAuth2","API key"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"Marketing API"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://mailchimp.com/developer/marketing/api/"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "36": {"description":"Ecommerce email/SMS marketing","auth_methods":["API key","OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developers.klaviyo.com"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "37": {"description":"All-in-one funnel/course builder","auth_methods":["API key"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"narrow","notes":"account API key"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developer.systeme.io"],"confidence":"low","source":"llm_knowledge","verified":false},
-  "38": {"description":"Visual discovery / pins platform","auth_methods":["OAuth2"],"access":"self_serve","gate_type":"admin_approval","api_surface":{"type":"REST","breadth":"medium","notes":"app review for scaled/ads"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"production/ads scopes need app review","evidence":["https://developers.pinterest.com/docs/api/v5/"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "39": {"description":"Meta's text social network","auth_methods":["OAuth2"],"access":"self_serve","gate_type":"admin_approval","api_surface":{"type":"REST","breadth":"narrow","notes":"Threads API (Graph)"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"limited API; app review for scopes","evidence":["https://developers.facebook.com/docs/threads"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "40": {"description":"Transactional and marketing email API","auth_methods":["API key"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://docs.sendgrid.com/api-reference"],"confidence":"high","source":"llm_knowledge","verified":false},
-
-  "41": {"description":"Ecommerce platform for online stores","auth_methods":["OAuth2","API key","Token"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"GraphQL/REST","breadth":"broad","notes":"Admin GraphQL + REST"},"existing_mcp":{"has":true,"url":"https://shopify.dev/docs/apps/build/storefront-mcp"},"buildability":"buildable_today","blocker":"","evidence":["https://shopify.dev/docs/api"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "42": {"description":"WordPress ecommerce plugin","auth_methods":["API key","Basic"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"consumer key/secret; self-hosted"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://woocommerce.github.io/woocommerce-rest-api-docs/"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "43": {"description":"Ecommerce platform for growing brands","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST/GraphQL","breadth":"broad","notes":"store API tokens"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developer.bigcommerce.com/docs"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "44": {"description":"Salesforce enterprise commerce platform","auth_methods":["OAuth2"],"access":"gated","gate_type":"paid","api_surface":{"type":"REST","breadth":"broad","notes":"SCAPI/OCAPI, needs instance"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"requires paid Commerce Cloud instance","evidence":["https://developer.salesforce.com/docs/commerce"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "45": {"description":"Adobe Commerce / Magento platform","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST/GraphQL","breadth":"broad","notes":"open-source Magento self-host"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developer.adobe.com/commerce/webapi/rest/"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "46": {"description":"Website builder with commerce APIs","auth_methods":["API key","OAuth2"],"access":"gated","gate_type":"paid","api_surface":{"type":"REST","breadth":"medium","notes":"commerce APIs need paid plan"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"requires paid Squarespace plan","evidence":["https://developers.squarespace.com"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "47": {"description":"Ecommerce widget/platform for sites","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"medium","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://api-docs.ecwid.com"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "48": {"description":"Sell digital products and memberships","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"narrow","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://app.gumroad.com/api"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "49": {"description":"Amazon marketplace seller integration API","auth_methods":["OAuth2"],"access":"gated","gate_type":"partner","api_surface":{"type":"REST","breadth":"broad","notes":"LWA; seller + developer registration"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"developer registration + app approval required","evidence":["https://developer-docs.amazon.com/sp-api/"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "50": {"description":"Payments/checkout for creators","auth_methods":["API key"],"access":"gated","gate_type":"contact_sales","api_surface":{"type":"REST","breadth":"narrow","notes":"unclear public API"},"existing_mcp":{"has":false,"url":""},"buildability":"blocked","blocker":"no clearly documented public API","evidence":["https://fanbasis.com"],"confidence":"low","source":"llm_knowledge","verified":false},
-
-  "51": {"description":"SEO/SERP data APIs","auth_methods":["Basic"],"access":"self_serve","gate_type":"paid","api_surface":{"type":"REST","breadth":"broad","notes":"pay-as-you-go, self-serve signup"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://docs.dataforseo.com"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "52": {"description":"SEO rank tracking and audit tools","auth_methods":["API key"],"access":"self_serve","gate_type":"paid","api_surface":{"type":"REST","breadth":"medium","notes":"API included in every plan; add-on for volume"},"existing_mcp":{"has":true,"url":"https://seranking.com/api.html"},"buildability":"buildable_today","blocker":"","evidence":["https://seranking.com/api.html"],"confidence":"med","source":"llm_knowledge+web","verified":true},
-  "53": {"description":"SEO backlink and keyword data","auth_methods":["API key"],"access":"gated","gate_type":"paid","api_surface":{"type":"REST","breadth":"medium","notes":"API add-on / Enterprise"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"API requires paid add-on/Enterprise","evidence":["https://ahrefs.com/api"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "54": {"description":"No-code/AI web scraping service","auth_methods":["API key"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"narrow","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://docs.mrscraper.com"],"confidence":"low","source":"llm_knowledge","verified":false},
-  "55": {"description":"Web scraping/automation actor cloud","auth_methods":["API key"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":""},"existing_mcp":{"has":true,"url":"https://apify.com/apify/actors-mcp-server"},"buildability":"buildable_today","blocker":"","evidence":["https://docs.apify.com/api/v2"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "56": {"description":"LLM-ready web crawling/scraping API","auth_methods":["API key"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"medium","notes":""},"existing_mcp":{"has":true,"url":"https://github.com/mendableai/firecrawl-mcp-server"},"buildability":"buildable_today","blocker":"","evidence":["https://docs.firecrawl.dev"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "57": {"description":"Proxy network and web data platform","auth_methods":["API key","Basic"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"broad","notes":"self-serve signup, paid usage"},"existing_mcp":{"has":true,"url":"https://github.com/luminati-io/brightdata-mcp"},"buildability":"buildable_today","blocker":"","evidence":["https://docs.brightdata.com"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "58": {"description":"Open-source username OSINT CLI","auth_methods":["None"],"access":"self_serve","gate_type":"free","api_surface":{"type":"none","breadth":"narrow","notes":"local Python CLI, no API/auth"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://github.com/sherlock-project/sherlock"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "59": {"description":"Contact/company intelligence data","auth_methods":["API key"],"access":"gated","gate_type":"contact_sales","api_surface":{"type":"REST","breadth":"narrow","notes":"unclear public self-serve API"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"access likely sales-gated","evidence":["https://waterfall.io"],"confidence":"low","source":"llm_knowledge","verified":false},
-  "60": {"description":"Data enrichment / GTM automation","auth_methods":["API key"],"access":"gated","gate_type":"paid","api_surface":{"type":"REST","breadth":"narrow","notes":"HTTP API on higher plans"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"programmatic API limited to paid tiers","evidence":["https://www.clay.com"],"confidence":"low","source":"llm_knowledge","verified":false},
-
-  "61": {"description":"Code hosting and collaboration platform","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST/GraphQL","breadth":"broad","notes":"PAT + OAuth + GraphQL"},"existing_mcp":{"has":true,"url":"https://github.com/github/github-mcp-server"},"buildability":"buildable_today","blocker":"","evidence":["https://docs.github.com/rest"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "62": {"description":"Frontend cloud / deployment platform","auth_methods":["Token","OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"bearer token"},"existing_mcp":{"has":true,"url":"https://mcp.vercel.com"},"buildability":"buildable_today","blocker":"","evidence":["https://vercel.com/docs/rest-api"],"confidence":"high","source":"llm_knowledge+web","verified":true},
-  "63": {"description":"Web hosting and deployment platform","auth_methods":["Token","OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"PAT / OAuth"},"existing_mcp":{"has":true,"url":"https://docs.netlify.com/welcome/build-with-ai/netlify-mcp-server/"},"buildability":"buildable_today","blocker":"","evidence":["https://docs.netlify.com/api/get-started/"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "64": {"description":"CDN, DNS, security and edge platform","auth_methods":["API key","Token"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"API tokens"},"existing_mcp":{"has":true,"url":"https://github.com/cloudflare/mcp-server-cloudflare"},"buildability":"buildable_today","blocker":"","evidence":["https://developers.cloudflare.com/api/"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "65": {"description":"Open-source Postgres backend platform","auth_methods":["API key","OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"auto REST + Management API"},"existing_mcp":{"has":true,"url":"https://github.com/supabase-community/supabase-mcp"},"buildability":"buildable_today","blocker":"","evidence":["https://supabase.com/docs/reference/api"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "66": {"description":"Graph database platform","auth_methods":["Basic","API key","OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"medium","notes":"Aura API + HTTP"},"existing_mcp":{"has":true,"url":"https://github.com/neo4j-contrib/mcp-neo4j"},"buildability":"buildable_today","blocker":"","evidence":["https://neo4j.com/docs/"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "67": {"description":"Cloud data warehouse platform","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST/SQL","breadth":"medium","notes":"SQL API; needs account"},"existing_mcp":{"has":true,"url":"https://github.com/Snowflake-Labs/mcp"},"buildability":"buildable_today","blocker":"","evidence":["https://docs.snowflake.com/en/developer-guide/sql-api/index"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "68": {"description":"Managed MongoDB cloud database","auth_methods":["API key"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"Admin API (HTTP Digest keys)"},"existing_mcp":{"has":true,"url":"https://github.com/mongodb-js/mongodb-mcp-server"},"buildability":"buildable_today","blocker":"","evidence":["https://www.mongodb.com/docs/atlas/api/"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "69": {"description":"Monitoring and observability platform","auth_methods":["API key"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"broad","notes":"API + APP keys"},"existing_mcp":{"has":true,"url":"https://docs.datadoghq.com/bits_ai/mcp_server/"},"buildability":"buildable_today","blocker":"","evidence":["https://docs.datadoghq.com/api/latest/"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "70": {"description":"Error tracking and performance monitoring","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"auth tokens"},"existing_mcp":{"has":true,"url":"https://github.com/getsentry/sentry-mcp"},"buildability":"buildable_today","blocker":"","evidence":["https://docs.sentry.io/api/"],"confidence":"high","source":"llm_knowledge","verified":false},
-
-  "71": {"description":"Docs, wiki and database workspace","auth_methods":["OAuth2","API key"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"medium","notes":"integration token / OAuth"},"existing_mcp":{"has":true,"url":"https://github.com/makenotion/notion-mcp-server"},"buildability":"buildable_today","blocker":"","evidence":["https://developers.notion.com/reference"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "72": {"description":"Spreadsheet-database hybrid platform","auth_methods":["API key","OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"medium","notes":"PAT / OAuth"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://airtable.com/developers/web/api/introduction"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "73": {"description":"Issue tracking for software teams","auth_methods":["API key","OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"GraphQL","breadth":"medium","notes":"GraphQL API"},"existing_mcp":{"has":true,"url":"https://linear.app/docs/mcp"},"buildability":"buildable_today","blocker":"","evidence":["https://developers.linear.app/docs"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "74": {"description":"Atlassian issue and project tracking","auth_methods":["OAuth2","API key","Basic"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"REST v3 + OAuth"},"existing_mcp":{"has":true,"url":"https://www.atlassian.com/platform/remote-mcp-server"},"buildability":"buildable_today","blocker":"","evidence":["https://developer.atlassian.com/cloud/jira/platform/rest/v3/"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "75": {"description":"Work and project management platform","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"PAT / OAuth"},"existing_mcp":{"has":true,"url":"https://developers.asana.com/docs/mcp-server"},"buildability":"buildable_today","blocker":"","evidence":["https://developers.asana.com/reference/rest-api-reference"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "76": {"description":"Work OS / project management platform","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"free","api_surface":{"type":"GraphQL","breadth":"broad","notes":"GraphQL API"},"existing_mcp":{"has":true,"url":"https://developer.monday.com/apps/docs/mondaycom-mcp-integration"},"buildability":"buildable_today","blocker":"","evidence":["https://developer.monday.com/api-reference"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "77": {"description":"Project management / productivity app","auth_methods":["API key","OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"personal token / OAuth"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://clickup.com/api"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "78": {"description":"Docs with tables and building blocks","auth_methods":["API key"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"medium","notes":"API token"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://coda.io/developers/apis/v1"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "79": {"description":"Work/project management with sheets","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"broad","notes":"OAuth + access token"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://smartsheet.redoc.ly/"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "80": {"description":"Time tracking and invoicing","auth_methods":["OAuth2","Token"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"medium","notes":"PAT / OAuth"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://help.getharvest.com/api-v2/"],"confidence":"high","source":"llm_knowledge","verified":false},
-
-  "81": {"description":"Online payments and billing platform","auth_methods":["API key","OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"secret key; test mode free"},"existing_mcp":{"has":true,"url":"https://github.com/stripe/agent-toolkit"},"buildability":"buildable_today","blocker":"","evidence":["https://stripe.com/docs/api"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "82": {"description":"Bank account / financial data connectivity","auth_methods":["API key"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"free sandbox; prod needs approval"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"production access requires Plaid approval","evidence":["https://plaid.com/docs/api/"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "83": {"description":"Cryptocurrency exchange with trading APIs","auth_methods":["API key"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"HMAC-signed API keys"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"regional/regulatory restrictions apply","evidence":["https://binance-docs.github.io/apidocs/"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "84": {"description":"Payment gateway (NMI-powered)","auth_methods":["API key"],"access":"gated","gate_type":"contact_sales","api_surface":{"type":"REST","breadth":"narrow","notes":"merchant account required"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"requires merchant account/onboarding","evidence":["https://www.nmi.com/"],"confidence":"low","source":"llm_knowledge","verified":false},
-  "85": {"description":"AI-driven payments/payouts platform","auth_methods":["API key"],"access":"gated","gate_type":"contact_sales","api_surface":{"type":"REST","breadth":"narrow","notes":"docs exist; onboarding likely gated"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"account onboarding likely required","evidence":["https://ipayx.ai/docs"],"confidence":"low","source":"llm_knowledge","verified":false},
-  "86": {"description":"Accounting software for SMBs","auth_methods":["OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"free dev + sandbox"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "87": {"description":"Cloud accounting platform","auth_methods":["OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"broad","notes":"free dev + demo org"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://developer.xero.com/documentation/api/accounting/overview"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "88": {"description":"Corporate cards and spend management","auth_methods":["OAuth2","API key"],"access":"gated","gate_type":"paid","api_surface":{"type":"REST","breadth":"medium","notes":"must be a Brex customer"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"requires Brex business account","evidence":["https://developer.brex.com"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "89": {"description":"Corporate cards and spend automation","auth_methods":["OAuth2"],"access":"gated","gate_type":"paid","api_surface":{"type":"REST","breadth":"medium","notes":"must be a Ramp customer"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"requires Ramp business account","evidence":["https://docs.ramp.com"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "90": {"description":"Private capital market research/data","auth_methods":["API key"],"access":"gated","gate_type":"contact_sales","api_surface":{"type":"REST","breadth":"medium","notes":"enterprise license"},"existing_mcp":{"has":false,"url":""},"buildability":"blocked","blocker":"enterprise license + no self-serve API","evidence":["https://pitchbook.com"],"confidence":"high","source":"llm_knowledge","verified":false},
-
-  "91": {"description":"AI research/notebook assistant (Google)","auth_methods":["OAuth2"],"access":"gated","gate_type":"contact_sales","api_surface":{"type":"none","breadth":"narrow","notes":"no public NotebookLM API; Gemini Enterprise adjacency"},"existing_mcp":{"has":false,"url":""},"buildability":"blocked","blocker":"no public NotebookLM API","evidence":["https://cloud.google.com/gemini"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "92": {"description":"Meeting transcription and notes AI","auth_methods":["OAuth2","API key"],"access":"gated","gate_type":"paid","api_surface":{"type":"REST","breadth":"narrow","notes":"limited API; MCP server"},"existing_mcp":{"has":true,"url":"https://help.otter.ai"},"buildability":"partial","blocker":"limited public API surface","evidence":["https://help.otter.ai"],"confidence":"low","source":"llm_knowledge","verified":false},
-  "93": {"description":"AI meeting recorder and notetaker","auth_methods":["API key","OAuth2"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"narrow","notes":"API in beta"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://fathom.video"],"confidence":"low","source":"llm_knowledge","verified":false},
-  "94": {"description":"AI research search over papers","auth_methods":["OAuth2"],"access":"gated","gate_type":"contact_sales","api_surface":{"type":"REST","breadth":"narrow","notes":"OAuth/API requested, not fully public"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"public API access still limited","evidence":["https://consensus.app"],"confidence":"low","source":"llm_knowledge","verified":false},
-  "95": {"description":"Document parsing/extraction API","auth_methods":["API key"],"access":"self_serve","gate_type":"trial","api_surface":{"type":"REST","breadth":"narrow","notes":""},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://docs.reducto.ai"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "96": {"description":"Autonomous AI software engineer","auth_methods":["API key"],"access":"gated","gate_type":"paid","api_surface":{"type":"REST","breadth":"narrow","notes":"API + MCP; paid plan"},"existing_mcp":{"has":true,"url":"https://docs.devin.ai/work-with-devin/devin-mcp"},"buildability":"buildable_today","blocker":"requires paid Devin plan","evidence":["https://docs.devin.ai/api-reference/overview"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "97": {"description":"AI content/video generation suite","auth_methods":["API key"],"access":"gated","gate_type":"paid","api_surface":{"type":"REST","breadth":"narrow","notes":"CLI/API, paid"},"existing_mcp":{"has":false,"url":""},"buildability":"partial","blocker":"paid; API surface limited/evolving","evidence":["https://higgsfield.ai"],"confidence":"low","source":"llm_knowledge","verified":false},
-  "98": {"description":"Open-source diagram-as-code CLI","auth_methods":["None"],"access":"self_serve","gate_type":"free","api_surface":{"type":"none","breadth":"narrow","notes":"local npm CLI, no auth"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://github.com/mermaid-js/mermaid-cli"],"confidence":"high","source":"llm_knowledge","verified":false},
-  "99": {"description":"YouTube transcript retrieval API","auth_methods":["API key"],"access":"self_serve","gate_type":"free","api_surface":{"type":"REST","breadth":"narrow","notes":"third-party transcript API"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"","evidence":["https://www.transcriptapi.com"],"confidence":"med","source":"llm_knowledge","verified":false},
-  "100":{"description":"AI meeting recorder and notes","auth_methods":["API key","OAuth2"],"access":"self_serve","gate_type":"paid","api_surface":{"type":"REST","breadth":"narrow","notes":"API for customers"},"existing_mcp":{"has":false,"url":""},"buildability":"buildable_today","blocker":"requires paid Grain plan","evidence":["https://grain.com"],"confidence":"low","source":"llm_knowledge","verified":false}
+  "1": {
+    "description": "Enterprise CRM and sales cloud platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST/SOAP",
+      "breadth": "broad",
+      "notes": "REST, SOAP, Bulk, GraphQL"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://developer.salesforce.com/docs/ai/agentforce/guide/mcp.html"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.salesforce.com/docs"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "2": {
+    "description": "CRM and inbound marketing platform",
+    "auth_methods": [
+      "OAuth2",
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "private apps + OAuth"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://developers.hubspot.com/mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developers.hubspot.com/docs/api/overview"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "3": {
+    "description": "Sales-focused CRM for pipelines",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "v1/v2 REST"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://www.pipedrive.com/en/newsroom/pipedrive-launches-native-mcp-server-bringing-crm-workflows-directly-into-ai-assistants"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developers.pipedrive.com/docs/api/v1"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "4": {
+    "description": "Modern data-model CRM for startups",
+    "auth_methods": [
+      "OAuth2",
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developers.attio.com"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "5": {
+    "description": "Open-source CRM, self-hostable",
+    "auth_methods": [
+      "API key",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "GraphQL/REST",
+      "breadth": "medium",
+      "notes": "GraphQL + REST, self-host"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://twenty.com/developers"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "6": {
+    "description": "Work/collaboration platform with CRM apps",
+    "auth_methods": [
+      "OAuth2",
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "Citrix Podio API"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developers.podio.com"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "7": {
+    "description": "Zoho's cloud CRM suite",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://www.zoho.com/crm/developer/mcp.html"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://www.zoho.com/crm/developer/docs/api/v6/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "8": {
+    "description": "Inside-sales CRM with calling",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.close.com"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "9": {
+    "description": "CRM for Google Workspace users",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "customer-only API token"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "must be a paying Copper customer",
+    "evidence": [
+      "https://developer.copper.com"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "10": {
+    "description": "CRM/deal platform for private capital",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "Intapp DealCloud"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "enterprise-only; API access via account/partner",
+    "evidence": [
+      "https://api.docs.dealcloud.com"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "11": {
+    "description": "Customer support and ticketing suite",
+    "auth_methods": [
+      "OAuth2",
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://support.zendesk.com/hc/en-us/articles/10497779528730"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.zendesk.com/api-reference"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "12": {
+    "description": "Customer messaging and support platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://developers.intercom.com/docs/guides/mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developers.intercom.com"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "13": {
+    "description": "Cloud helpdesk by Freshworks",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developers.freshdesk.com/api"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "14": {
+    "description": "Shared inbox and customer ops",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "customer-only"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "requires paid Front account",
+    "evidence": [
+      "https://dev.frontapp.com"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "15": {
+    "description": "B2B support platform for modern teams",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "customer-only"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://docs.usepylon.com/pylon-docs/developer/mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "requires paid Pylon account",
+    "evidence": [
+      "https://docs.usepylon.com"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "16": {
+    "description": "Helpdesk with ticketing and live chat",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://liveagent.com/api"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "17": {
+    "description": "Developer-first B2B support tool",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "GraphQL",
+      "breadth": "medium",
+      "notes": "GraphQL API"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://www.plain.com/docs/api-reference/graphql"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "18": {
+    "description": "Simple helpdesk and shared inbox",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.helpscout.com"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "19": {
+    "description": "Helpdesk built for ecommerce",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "customer-only"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "requires paid Gorgias account",
+    "evidence": [
+      "https://developers.gorgias.com"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "20": {
+    "description": "Customer service platform, people-centric",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "enterprise"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "enterprise sales gate for access",
+    "evidence": [
+      "https://developer.gladly.com"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "21": {
+    "description": "Team messaging and collaboration",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "Web API + events"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/slackapi"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://api.slack.com"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "22": {
+    "description": "Programmable SMS, voice, messaging APIs",
+    "auth_methods": [
+      "Basic",
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "Account SID + auth token / API keys"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/twilio-labs/mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://www.twilio.com/docs/usage/api"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "23": {
+    "description": "Zoho's team chat app",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "webhooks + REST"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://www.zoho.com/cliq/help/restapi/"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "24": {
+    "description": "Lark/Feishu collaboration suite (open platform)",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "tenant/app access tokens"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/larksuite/lark-openapi-mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://open.larksuite.com/document"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "25": {
+    "description": "Free team messaging app",
+    "auth_methods": [
+      "API key",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "limited/newer public API",
+    "evidence": [
+      "https://pumble.com/developers"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "26": {
+    "description": "Voice/chat community platform",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "bot token + OAuth2"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://discord.com/developers/docs"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "27": {
+    "description": "Messaging app with bot API",
+    "auth_methods": [
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "Bot API + MTProto"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://core.telegram.org/bots/api"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "28": {
+    "description": "WhatsApp Business messaging (Cloud API)",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "admin_approval",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "Graph API"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "business verification + phone number approval",
+    "evidence": [
+      "https://developers.facebook.com/docs/whatsapp"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "29": {
+    "description": "Cloud phone system for teams",
+    "auth_methods": [
+      "Basic",
+      "OAuth2"
+    ],
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "customer-only"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "requires paid Aircall account",
+    "evidence": [
+      "https://developer.aircall.io"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "30": {
+    "description": "Communications APIs (SMS, voice, verify)",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.vonage.com"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "31": {
+    "description": "Search/display advertising platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "gated",
+    "gate_type": "admin_approval",
+    "api_surface": {
+      "type": "REST/gRPC",
+      "breadth": "broad",
+      "notes": "developer token needs approval"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+    },
+    "buildability": "partial",
+    "blocker": "developer token requires Google approval",
+    "evidence": [
+      "https://developers.google.com/google-ads/api/docs/get-started/introduction"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "32": {
+    "description": "Meta (Facebook/Instagram) advertising APIs",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "admin_approval",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "Marketing API; advanced access needs review"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "advanced access requires App Review",
+    "evidence": [
+      "https://developers.facebook.com/docs/marketing-apis"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "33": {
+    "description": "LinkedIn advertising / marketing APIs",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "gated",
+    "gate_type": "partner",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "Marketing Developer Platform"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "Marketing Developer Platform access approval",
+    "evidence": [
+      "https://learn.microsoft.com/en-us/linkedin/marketing/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "34": {
+    "description": "Agency CRM/marketing all-in-one",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "API v2"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "requires paid GoHighLevel account",
+    "evidence": [
+      "https://highlevel.stoplight.io"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "35": {
+    "description": "Email marketing and automation",
+    "auth_methods": [
+      "OAuth2",
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "Marketing API"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://mailchimp.com/developer/marketing/api/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "36": {
+    "description": "Ecommerce email/SMS marketing",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developers.klaviyo.com"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "37": {
+    "description": "All-in-one funnel/course builder",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "account API key"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.systeme.io"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "38": {
+    "description": "Visual discovery / pins platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "admin_approval",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "app review for scaled/ads"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "production/ads scopes need app review",
+    "evidence": [
+      "https://developers.pinterest.com/docs/api/v5/"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "39": {
+    "description": "Meta's text social network",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "admin_approval",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "Threads API (Graph)"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "limited API; app review for scopes",
+    "evidence": [
+      "https://developers.facebook.com/docs/threads"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "40": {
+    "description": "Transactional and marketing email API",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.sendgrid.com/api-reference"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "41": {
+    "description": "Ecommerce platform for online stores",
+    "auth_methods": [
+      "OAuth2",
+      "API key",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "GraphQL/REST",
+      "breadth": "broad",
+      "notes": "Admin GraphQL + REST"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://shopify.dev/docs/apps/build/storefront-mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://shopify.dev/docs/api"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "42": {
+    "description": "WordPress ecommerce plugin",
+    "auth_methods": [
+      "API key",
+      "Basic"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "consumer key/secret; self-hosted"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "43": {
+    "description": "Ecommerce platform for growing brands",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST/GraphQL",
+      "breadth": "broad",
+      "notes": "store API tokens"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://www.bigcommerce.com/blog/storefront-mcp/"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.bigcommerce.com/docs"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "44": {
+    "description": "Salesforce enterprise commerce platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "SCAPI/OCAPI, needs instance"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "requires paid Commerce Cloud instance",
+    "evidence": [
+      "https://developer.salesforce.com/docs/commerce"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "45": {
+    "description": "Adobe Commerce / Magento platform",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST/GraphQL",
+      "breadth": "broad",
+      "notes": "open-source Magento self-host"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.adobe.com/commerce/webapi/rest/"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "46": {
+    "description": "Website builder with commerce APIs",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "commerce APIs need paid plan"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "requires paid Squarespace plan",
+    "evidence": [
+      "https://developers.squarespace.com"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "47": {
+    "description": "Ecommerce widget/platform for sites",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://api-docs.ecwid.com"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "48": {
+    "description": "Sell digital products and memberships",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://app.gumroad.com/api"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "49": {
+    "description": "Amazon marketplace seller integration API",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "gated",
+    "gate_type": "partner",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "LWA; seller + developer registration"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "developer registration + app approval required",
+    "evidence": [
+      "https://developer-docs.amazon.com/sp-api/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "50": {
+    "description": "Payments/checkout for creators",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "unclear public API"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "blocked",
+    "blocker": "no clearly documented public API",
+    "evidence": [
+      "https://fanbasis.com"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "51": {
+    "description": "SEO/SERP data APIs",
+    "auth_methods": [
+      "Basic"
+    ],
+    "access": "self_serve",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "pay-as-you-go, self-serve signup"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.dataforseo.com"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "52": {
+    "description": "SEO rank tracking and audit tools",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "API included in every plan; add-on for volume"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://seranking.com/api.html"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://seranking.com/api.html"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "53": {
+    "description": "SEO backlink and keyword data",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "API add-on / Enterprise"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "API requires paid add-on/Enterprise",
+    "evidence": [
+      "https://ahrefs.com/api"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "54": {
+    "description": "No-code/AI web scraping service",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.mrscraper.com"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "55": {
+    "description": "Web scraping/automation actor cloud",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://apify.com/apify/actors-mcp-server"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.apify.com/api/v2"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "56": {
+    "description": "LLM-ready web crawling/scraping API",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/mendableai/firecrawl-mcp-server"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.firecrawl.dev"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "57": {
+    "description": "Proxy network and web data platform",
+    "auth_methods": [
+      "API key",
+      "Basic"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "self-serve signup, paid usage"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/luminati-io/brightdata-mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.brightdata.com"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "58": {
+    "description": "Open-source username OSINT CLI",
+    "auth_methods": [
+      "None"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "none",
+      "breadth": "narrow",
+      "notes": "local Python CLI, no API/auth"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://github.com/sherlock-project/sherlock"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "59": {
+    "description": "Contact/company intelligence data",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "unclear public self-serve API"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "access likely sales-gated",
+    "evidence": [
+      "https://waterfall.io"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "60": {
+    "description": "Data enrichment / GTM automation",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "HTTP API on higher plans"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "programmatic API limited to paid tiers",
+    "evidence": [
+      "https://www.clay.com"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "61": {
+    "description": "Code hosting and collaboration platform",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST/GraphQL",
+      "breadth": "broad",
+      "notes": "PAT + OAuth + GraphQL"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/github/github-mcp-server"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.github.com/rest"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "62": {
+    "description": "Frontend cloud / deployment platform",
+    "auth_methods": [
+      "Token",
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "bearer token"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://mcp.vercel.com"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://vercel.com/docs/rest-api"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "63": {
+    "description": "Web hosting and deployment platform",
+    "auth_methods": [
+      "Token",
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "PAT / OAuth"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://docs.netlify.com/welcome/build-with-ai/netlify-mcp-server/"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.netlify.com/api/get-started/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "64": {
+    "description": "CDN, DNS, security and edge platform",
+    "auth_methods": [
+      "API key",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "API tokens"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/cloudflare/mcp-server-cloudflare"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developers.cloudflare.com/api/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "65": {
+    "description": "Open-source Postgres backend platform",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "auto REST + Management API"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/supabase-community/supabase-mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://supabase.com/docs/reference/api"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "66": {
+    "description": "Graph database platform",
+    "auth_methods": [
+      "Basic",
+      "API key",
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "Aura API + HTTP"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/neo4j-contrib/mcp-neo4j"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://neo4j.com/docs/"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "67": {
+    "description": "Cloud data warehouse platform",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST/SQL",
+      "breadth": "medium",
+      "notes": "SQL API; needs account"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/Snowflake-Labs/mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "68": {
+    "description": "Managed MongoDB cloud database",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "Admin API (HTTP Digest keys)"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://www.mongodb.com/docs/atlas/api/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "69": {
+    "description": "Monitoring and observability platform",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "API + APP keys"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://docs.datadoghq.com/bits_ai/mcp_server/"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.datadoghq.com/api/latest/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "70": {
+    "description": "Error tracking and performance monitoring",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "auth tokens"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/getsentry/sentry-mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.sentry.io/api/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "71": {
+    "description": "Docs, wiki and database workspace",
+    "auth_methods": [
+      "OAuth2",
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "integration token / OAuth"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/makenotion/notion-mcp-server"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developers.notion.com/reference"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "72": {
+    "description": "Spreadsheet-database hybrid platform",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "PAT / OAuth"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://mcp.airtable.com/mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://airtable.com/developers/web/api/introduction"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "73": {
+    "description": "Issue tracking for software teams",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "GraphQL",
+      "breadth": "medium",
+      "notes": "GraphQL API"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://linear.app/docs/mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developers.linear.app/docs"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "74": {
+    "description": "Atlassian issue and project tracking",
+    "auth_methods": [
+      "OAuth2",
+      "API key",
+      "Basic"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "REST v3 + OAuth"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://www.atlassian.com/platform/remote-mcp-server"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.atlassian.com/cloud/jira/platform/rest/v3/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "75": {
+    "description": "Work and project management platform",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "PAT / OAuth"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://developers.asana.com/docs/mcp-server"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developers.asana.com/reference/rest-api-reference"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "76": {
+    "description": "Work OS / project management platform",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "GraphQL",
+      "breadth": "broad",
+      "notes": "GraphQL API"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://developer.monday.com/apps/docs/mondaycom-mcp-integration"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.monday.com/api-reference"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "77": {
+    "description": "Project management / productivity app",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "personal token / OAuth"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://mcp.clickup.com/mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://clickup.com/api"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "78": {
+    "description": "Docs with tables and building blocks",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "API token"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://coda.io/developers/apis/v1"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "79": {
+    "description": "Work/project management with sheets",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "OAuth + access token"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://smartsheet.redoc.ly/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "80": {
+    "description": "Time tracking and invoicing",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "PAT / OAuth"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://help.getharvest.com/api-v2/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "81": {
+    "description": "Online payments and billing platform",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "secret key; test mode free"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/stripe/agent-toolkit"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://stripe.com/docs/api"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "82": {
+    "description": "Bank account / financial data connectivity",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "free sandbox; prod needs approval"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "production access requires Plaid approval",
+    "evidence": [
+      "https://plaid.com/docs/api/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "83": {
+    "description": "Cryptocurrency exchange with trading APIs",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "HMAC-signed API keys"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "regional/regulatory restrictions apply",
+    "evidence": [
+      "https://binance-docs.github.io/apidocs/"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "84": {
+    "description": "Payment gateway (NMI-powered)",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "merchant account required"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "requires merchant account/onboarding",
+    "evidence": [
+      "https://www.nmi.com/"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "85": {
+    "description": "AI-driven payments/payouts platform",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "docs exist; onboarding likely gated"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "account onboarding likely required",
+    "evidence": [
+      "https://ipayx.ai/docs"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "86": {
+    "description": "Accounting software for SMBs",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "free dev + sandbox"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/intuit/quickbooks-online-mcp-server"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "87": {
+    "description": "Cloud accounting platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "free dev + demo org"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/XeroAPI/xero-mcp-server"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.xero.com/documentation/api/accounting/overview"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "88": {
+    "description": "Corporate cards and spend management",
+    "auth_methods": [
+      "OAuth2",
+      "API key"
+    ],
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "must be a Brex customer"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://developer.brex.com/docs/mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "requires Brex business account",
+    "evidence": [
+      "https://developer.brex.com"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "89": {
+    "description": "Corporate cards and spend automation",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "must be a Ramp customer"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "requires Ramp business account",
+    "evidence": [
+      "https://docs.ramp.com"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "90": {
+    "description": "Private capital market research/data",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "enterprise license"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "blocked",
+    "blocker": "enterprise license + no self-serve API",
+    "evidence": [
+      "https://pitchbook.com"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "91": {
+    "description": "AI research/notebook assistant (Google)",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "none",
+      "breadth": "narrow",
+      "notes": "no public NotebookLM API; Gemini Enterprise adjacency"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "blocked",
+    "blocker": "no public NotebookLM API",
+    "evidence": [
+      "https://cloud.google.com/gemini"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "92": {
+    "description": "Meeting transcription and notes AI",
+    "auth_methods": [
+      "OAuth2",
+      "API key"
+    ],
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "limited API; MCP server"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://help.otter.ai"
+    },
+    "buildability": "partial",
+    "blocker": "limited public API surface",
+    "evidence": [
+      "https://help.otter.ai"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "93": {
+    "description": "AI meeting recorder and notetaker",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "API in beta"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://developers.fathom.ai/mcp-docs"
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://fathom.video"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge+web",
+    "verified": true
+  },
+  "94": {
+    "description": "AI research search over papers",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "OAuth/API requested, not fully public"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "public API access still limited",
+    "evidence": [
+      "https://consensus.app"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "95": {
+    "description": "Document parsing/extraction API",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.reducto.ai"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "96": {
+    "description": "Autonomous AI software engineer",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "API + MCP; paid plan"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp"
+    },
+    "buildability": "buildable_today",
+    "blocker": "requires paid Devin plan",
+    "evidence": [
+      "https://docs.devin.ai/api-reference/overview"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "97": {
+    "description": "AI content/video generation suite",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "CLI/API, paid"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "partial",
+    "blocker": "paid; API surface limited/evolving",
+    "evidence": [
+      "https://higgsfield.ai"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "98": {
+    "description": "Open-source diagram-as-code CLI",
+    "auth_methods": [
+      "None"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "none",
+      "breadth": "narrow",
+      "notes": "local npm CLI, no auth"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://github.com/mermaid-js/mermaid-cli"
+    ],
+    "confidence": "high",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "99": {
+    "description": "YouTube transcript retrieval API",
+    "auth_methods": [
+      "API key"
+    ],
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "third-party transcript API"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://www.transcriptapi.com"
+    ],
+    "confidence": "med",
+    "source": "llm_knowledge",
+    "verified": false
+  },
+  "100": {
+    "description": "AI meeting recorder and notes",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": "self_serve",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "API for customers"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://grain.com/release-note/06-18-2025"
+    },
+    "buildability": "buildable_today",
+    "blocker": "requires paid Grain plan",
+    "evidence": [
+      "https://grain.com"
+    ],
+    "confidence": "low",
+    "source": "llm_knowledge+web",
+    "verified": true
+  }
 }
