@@ -1,0 +1,3294 @@
+[
+  {
+    "id": 1,
+    "name": "Salesforce",
+    "category": "CRM and Sales",
+    "hint": "salesforce.com",
+    "description": "Enterprise CRM and sales cloud platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST/SOAP",
+      "breadth": "broad",
+      "notes": "REST, SOAP, Bulk, GraphQL \u00b7 184 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "salesforce",
+    "composio_tools_count": 184,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/salesforce",
+      "https://developer.salesforce.com/docs"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 2,
+    "name": "HubSpot",
+    "category": "CRM and Sales",
+    "hint": "hubspot.com",
+    "description": "CRM and inbound marketing platform",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "private apps + OAuth \u00b7 244 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://developers.hubspot.com/mcp"
+    },
+    "composio_supported": true,
+    "composio_slug": "hubspot",
+    "composio_tools_count": 244,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/hubspot",
+      "https://developers.hubspot.com/docs/api/overview"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 3,
+    "name": "Pipedrive",
+    "category": "CRM and Sales",
+    "hint": "pipedrive.com",
+    "description": "Sales-focused CRM for pipelines",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "v1/v2 REST \u00b7 399 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "pipedrive",
+    "composio_tools_count": 399,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/pipedrive",
+      "https://developers.pipedrive.com/docs/api/v1"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 4,
+    "name": "Attio",
+    "category": "CRM and Sales",
+    "hint": "attio.com",
+    "description": "Modern data-model CRM for startups",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "99 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "attio",
+    "composio_tools_count": 99,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/attio",
+      "https://developers.attio.com"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 5,
+    "name": "Twenty",
+    "category": "CRM and Sales",
+    "hint": "twenty.com",
+    "description": "Open-source CRM, self-hostable",
+    "auth_methods": [
+      "API key",
+      "Token"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "GraphQL/REST",
+      "breadth": "medium",
+      "notes": "GraphQL + REST, self-host"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://twenty.com/developers"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 6,
+    "name": "Podio",
+    "category": "CRM and Sales",
+    "hint": "podio.com",
+    "description": "Work/collaboration platform with CRM apps",
+    "auth_methods": [
+      "OAuth2",
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "Citrix Podio API"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developers.podio.com"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 7,
+    "name": "Zoho CRM",
+    "category": "CRM and Sales",
+    "hint": "zoho.com/crm",
+    "description": "Zoho's cloud CRM suite",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "57 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "zoho",
+    "composio_tools_count": 57,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/zoho",
+      "https://www.zoho.com/crm/developer/docs/api/v6/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 8,
+    "name": "Close",
+    "category": "CRM and Sales",
+    "hint": "close.com",
+    "description": "Inside-sales CRM with calling",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "6 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "close",
+    "composio_tools_count": 6,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/close",
+      "https://developer.close.com"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 9,
+    "name": "Copper",
+    "category": "CRM and Sales",
+    "hint": "copper.com",
+    "description": "CRM for Google Workspace users",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "customer-only API token"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "must be a paying Copper customer",
+    "evidence": [
+      "https://developer.copper.com"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 10,
+    "name": "DealCloud",
+    "category": "CRM and Sales",
+    "hint": "api.docs.dealcloud.com",
+    "description": "CRM/deal platform for private capital",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "Intapp DealCloud"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "enterprise-only; API access via account/partner",
+    "evidence": [
+      "https://api.docs.dealcloud.com"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 11,
+    "name": "Zendesk",
+    "category": "Support and Helpdesk",
+    "hint": "zendesk.com",
+    "description": "Customer support and ticketing suite",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "452 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "zendesk",
+    "composio_tools_count": 452,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/zendesk",
+      "https://developer.zendesk.com/api-reference"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 12,
+    "name": "Intercom",
+    "category": "Support and Helpdesk",
+    "hint": "intercom.com",
+    "description": "Customer messaging and support platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "133 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://developers.intercom.com/docs/guides/mcp"
+    },
+    "composio_supported": true,
+    "composio_slug": "intercom",
+    "composio_tools_count": 133,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/intercom",
+      "https://developers.intercom.com"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 13,
+    "name": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "hint": "freshdesk.com",
+    "description": "Cloud helpdesk by Freshworks",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "178 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "freshdesk",
+    "composio_tools_count": 178,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/freshdesk",
+      "https://developers.freshdesk.com/api"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 14,
+    "name": "Front",
+    "category": "Support and Helpdesk",
+    "hint": "front.com",
+    "description": "Shared inbox and customer ops",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "customer-only"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "requires paid Front account",
+    "evidence": [
+      "https://dev.frontapp.com"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 15,
+    "name": "Pylon",
+    "category": "Support and Helpdesk",
+    "hint": "usepylon.com",
+    "description": "B2B support platform for modern teams",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "customer-only \u00b7 12 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://docs.usepylon.com/pylon-docs/developer/mcp"
+    },
+    "composio_supported": true,
+    "composio_slug": "pylon_mcp",
+    "composio_tools_count": 12,
+    "buildability": "buildable_today",
+    "blocker": "requires paid Pylon account",
+    "evidence": [
+      "https://composio.dev/toolkit/pylon_mcp",
+      "https://docs.usepylon.com"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 16,
+    "name": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "hint": "liveagent.com",
+    "description": "Helpdesk with ticketing and live chat",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://liveagent.com/api"
+    ],
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "id": 17,
+    "name": "Plain",
+    "category": "Support and Helpdesk",
+    "hint": "plain.com",
+    "description": "Developer-first B2B support tool",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "GraphQL",
+      "breadth": "narrow",
+      "notes": "GraphQL API \u00b7 22 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "plain",
+    "composio_tools_count": 22,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/plain",
+      "https://www.plain.com/docs/api-reference/graphql"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 18,
+    "name": "Help Scout",
+    "category": "Support and Helpdesk",
+    "hint": "helpscout.com",
+    "description": "Simple helpdesk and shared inbox",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "129 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "help_scout",
+    "composio_tools_count": 129,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/help_scout",
+      "https://developer.helpscout.com"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 19,
+    "name": "Gorgias",
+    "category": "Support and Helpdesk",
+    "hint": "gorgias.com",
+    "description": "Helpdesk built for ecommerce",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "customer-only \u00b7 32 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "gorgias",
+    "composio_tools_count": 32,
+    "buildability": "buildable_today",
+    "blocker": "requires paid Gorgias account",
+    "evidence": [
+      "https://composio.dev/toolkit/gorgias",
+      "https://developers.gorgias.com"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 20,
+    "name": "Gladly",
+    "category": "Support and Helpdesk",
+    "hint": "gladly.com",
+    "description": "Customer service platform, people-centric",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "enterprise"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "enterprise sales gate for access",
+    "evidence": [
+      "https://developer.gladly.com"
+    ],
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "id": 21,
+    "name": "Slack",
+    "category": "Communications and Messaging",
+    "hint": "slack.com",
+    "description": "Team messaging and collaboration",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "Web API + events \u00b7 158 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/slackapi"
+    },
+    "composio_supported": true,
+    "composio_slug": "slack",
+    "composio_tools_count": 158,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/slack",
+      "https://api.slack.com"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 22,
+    "name": "Twilio",
+    "category": "Communications and Messaging",
+    "hint": "twilio.com",
+    "description": "Programmable SMS, voice, messaging APIs",
+    "auth_methods": [
+      "Basic",
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "Account SID + auth token / API keys"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/twilio-labs/mcp"
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://www.twilio.com/docs/usage/api"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 23,
+    "name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "hint": "zoho.com/cliq",
+    "description": "Zoho's team chat app",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "webhooks + REST"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://www.zoho.com/cliq/help/restapi/"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 24,
+    "name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "hint": "open.larksuite.com",
+    "description": "Lark/Feishu collaboration suite (open platform)",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "tenant/app access tokens"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/larksuite/lark-openapi-mcp"
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://open.larksuite.com/document"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 25,
+    "name": "Pumble",
+    "category": "Communications and Messaging",
+    "hint": "pumble.com",
+    "description": "Free team messaging app",
+    "auth_methods": [
+      "API key",
+      "Token"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "limited/newer public API",
+    "evidence": [
+      "https://pumble.com/developers"
+    ],
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "id": 26,
+    "name": "Discord",
+    "category": "Communications and Messaging",
+    "hint": "discord.com",
+    "description": "Voice/chat community platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "bot token + OAuth2 \u00b7 27 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "discord",
+    "composio_tools_count": 27,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/discord",
+      "https://discord.com/developers/docs"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 27,
+    "name": "Telegram",
+    "category": "Communications and Messaging",
+    "hint": "core.telegram.org",
+    "description": "Messaging app with bot API",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "Bot API + MTProto \u00b7 18 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "telegram",
+    "composio_tools_count": 18,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/telegram",
+      "https://core.telegram.org/bots/api"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 28,
+    "name": "WhatsApp Business",
+    "category": "Communications and Messaging",
+    "hint": "developers.facebook.com/docs/whatsapp",
+    "description": "WhatsApp Business messaging (Cloud API)",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "admin_approval",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "Graph API \u00b7 57 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "whatsapp",
+    "composio_tools_count": 57,
+    "buildability": "partial",
+    "blocker": "business verification + phone number approval",
+    "evidence": [
+      "https://composio.dev/toolkit/whatsapp",
+      "https://developers.facebook.com/docs/whatsapp"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 29,
+    "name": "Aircall",
+    "category": "Communications and Messaging",
+    "hint": "aircall.io",
+    "description": "Cloud phone system for teams",
+    "auth_methods": [
+      "Basic",
+      "OAuth2"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "customer-only"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "requires paid Aircall account",
+    "evidence": [
+      "https://developer.aircall.io"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 30,
+    "name": "Vonage",
+    "category": "Communications and Messaging",
+    "hint": "developer.vonage.com",
+    "description": "Communications APIs (SMS, voice, verify)",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.vonage.com"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 31,
+    "name": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.google.com/google-ads",
+    "description": "Search/display advertising platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "gated",
+    "gate_type": "admin_approval",
+    "api_surface": {
+      "type": "REST/gRPC",
+      "breadth": "narrow",
+      "notes": "developer token needs approval \u00b7 22 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server"
+    },
+    "composio_supported": true,
+    "composio_slug": "googleads",
+    "composio_tools_count": 22,
+    "buildability": "partial",
+    "blocker": "developer token requires Google approval",
+    "evidence": [
+      "https://composio.dev/toolkit/googleads",
+      "https://developers.google.com/google-ads/api/docs/get-started/introduction"
+    ],
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": 32,
+    "name": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.facebook.com/docs/marketing-apis",
+    "description": "Meta (Facebook/Instagram) advertising APIs",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "admin_approval",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "Marketing API; advanced access needs review \u00b7 50 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "metaads",
+    "composio_tools_count": 50,
+    "buildability": "partial",
+    "blocker": "advanced access requires App Review",
+    "evidence": [
+      "https://composio.dev/toolkit/metaads",
+      "https://developers.facebook.com/docs/marketing-apis"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 33,
+    "name": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "learn.microsoft.com/linkedin/marketing",
+    "description": "LinkedIn advertising / marketing APIs",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "gated",
+    "gate_type": "partner",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "Marketing Developer Platform \u00b7 28 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "linkedin_ads",
+    "composio_tools_count": 28,
+    "buildability": "partial",
+    "blocker": "Marketing Developer Platform access approval",
+    "evidence": [
+      "https://composio.dev/toolkit/linkedin_ads",
+      "https://learn.microsoft.com/en-us/linkedin/marketing/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 34,
+    "name": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "highlevel.stoplight.io",
+    "description": "Agency CRM/marketing all-in-one",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "API v2 \u00b7 218 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "highlevel",
+    "composio_tools_count": 218,
+    "buildability": "buildable_today",
+    "blocker": "requires paid GoHighLevel account",
+    "evidence": [
+      "https://composio.dev/toolkit/highlevel",
+      "https://highlevel.stoplight.io"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 35,
+    "name": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "mailchimp.com/developer",
+    "description": "Email marketing and automation",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "Marketing API \u00b7 272 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "mailchimp",
+    "composio_tools_count": 272,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/mailchimp",
+      "https://mailchimp.com/developer/marketing/api/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 36,
+    "name": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.klaviyo.com",
+    "description": "Ecommerce email/SMS marketing",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "225 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "klaviyo",
+    "composio_tools_count": 225,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/klaviyo",
+      "https://developers.klaviyo.com"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 37,
+    "name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "systeme.io",
+    "description": "All-in-one funnel/course builder",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "account API key"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.systeme.io"
+    ],
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "id": 38,
+    "name": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.pinterest.com",
+    "description": "Visual discovery / pins platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "admin_approval",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "app review for scaled/ads"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "production/ads scopes need app review",
+    "evidence": [
+      "https://developers.pinterest.com/docs/api/v5/"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 39,
+    "name": "Threads (Meta)",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.facebook.com/docs/threads",
+    "description": "Meta's text social network",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "admin_approval",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "Threads API (Graph)"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "limited API; app review for scopes",
+    "evidence": [
+      "https://developers.facebook.com/docs/threads"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 40,
+    "name": "SendGrid",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "sendgrid.com",
+    "description": "Transactional and marketing email API",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "359 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "sendgrid",
+    "composio_tools_count": 359,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/sendgrid",
+      "https://docs.sendgrid.com/api-reference"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 41,
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "hint": "shopify.dev",
+    "description": "Ecommerce platform for online stores",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "GraphQL/REST",
+      "breadth": "broad",
+      "notes": "Admin GraphQL + REST \u00b7 315 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://shopify.dev/docs/apps/build/storefront-mcp"
+    },
+    "composio_supported": true,
+    "composio_slug": "shopify",
+    "composio_tools_count": 315,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/shopify",
+      "https://shopify.dev/docs/api"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 42,
+    "name": "WooCommerce",
+    "category": "Ecommerce",
+    "hint": "woocommerce.com/document/woocommerce-rest-api",
+    "description": "WordPress ecommerce plugin",
+    "auth_methods": [
+      "API key",
+      "Basic"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "consumer key/secret; self-hosted"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://woocommerce.github.io/woocommerce-rest-api-docs/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 43,
+    "name": "BigCommerce",
+    "category": "Ecommerce",
+    "hint": "developer.bigcommerce.com",
+    "description": "Ecommerce platform for growing brands",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST/GraphQL",
+      "breadth": "broad",
+      "notes": "store API tokens"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.bigcommerce.com/docs"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 44,
+    "name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "hint": "developer.salesforce.com/docs/commerce",
+    "description": "Salesforce enterprise commerce platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "SCAPI/OCAPI, needs instance"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "requires paid Commerce Cloud instance",
+    "evidence": [
+      "https://developer.salesforce.com/docs/commerce"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 45,
+    "name": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "hint": "developer.adobe.com/commerce",
+    "description": "Adobe Commerce / Magento platform",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST/GraphQL",
+      "breadth": "broad",
+      "notes": "open-source Magento self-host"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://developer.adobe.com/commerce/webapi/rest/"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 46,
+    "name": "Squarespace",
+    "category": "Ecommerce",
+    "hint": "developers.squarespace.com",
+    "description": "Website builder with commerce APIs",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "commerce APIs need paid plan"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "requires paid Squarespace plan",
+    "evidence": [
+      "https://developers.squarespace.com"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 47,
+    "name": "Ecwid",
+    "category": "Ecommerce",
+    "hint": "api-docs.ecwid.com",
+    "description": "Ecommerce widget/platform for sites",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://api-docs.ecwid.com"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 48,
+    "name": "Gumroad",
+    "category": "Ecommerce",
+    "hint": "gumroad.com/api",
+    "description": "Sell digital products and memberships",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "7 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "gumroad",
+    "composio_tools_count": 7,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/gumroad",
+      "https://app.gumroad.com/api"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 49,
+    "name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "hint": "developer-docs.amazon.com/sp-api",
+    "description": "Amazon marketplace seller integration API",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "partner",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "LWA; seller + developer registration"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "developer registration + app approval required",
+    "evidence": [
+      "https://developer-docs.amazon.com/sp-api/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 50,
+    "name": "fanbasis",
+    "category": "Ecommerce",
+    "hint": "fanbasis.com",
+    "description": "Payments/checkout for creators",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "unclear public API"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "blocked",
+    "blocker": "no clearly documented public API",
+    "evidence": [
+      "https://fanbasis.com"
+    ],
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "id": 51,
+    "name": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.dataforseo.com",
+    "description": "SEO/SERP data APIs",
+    "auth_methods": [
+      "Basic"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "pay-as-you-go, self-serve signup \u00b7 312 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "dataforseo",
+    "composio_tools_count": 312,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/dataforseo",
+      "https://docs.dataforseo.com"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 52,
+    "name": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "hint": "seranking.com/api",
+    "description": "SEO rank tracking and audit tools",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge+web",
+    "access": "self_serve",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "API included in every plan; add-on for volume"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://seranking.com/api.html"
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://seranking.com/api.html"
+    ],
+    "confidence": "med",
+    "verified": true
+  },
+  {
+    "id": 53,
+    "name": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "hint": "ahrefs.com/api",
+    "description": "SEO backlink and keyword data",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "API add-on / Enterprise \u00b7 40 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "ahrefs",
+    "composio_tools_count": 40,
+    "buildability": "partial",
+    "blocker": "API requires paid add-on/Enterprise",
+    "evidence": [
+      "https://composio.dev/toolkit/ahrefs",
+      "https://ahrefs.com/api"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 54,
+    "name": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.mrscraper.com",
+    "description": "No-code/AI web scraping service",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.mrscraper.com"
+    ],
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "id": 55,
+    "name": "Apify",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.apify.com",
+    "description": "Web scraping/automation actor cloud",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "112 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://apify.com/apify/actors-mcp-server"
+    },
+    "composio_supported": true,
+    "composio_slug": "apify",
+    "composio_tools_count": 112,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/apify",
+      "https://docs.apify.com/api/v2"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 56,
+    "name": "Firecrawl",
+    "category": "Data, SEO and Scraping",
+    "hint": "firecrawl.dev",
+    "description": "LLM-ready web crawling/scraping API",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "29 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/mendableai/firecrawl-mcp-server"
+    },
+    "composio_supported": true,
+    "composio_slug": "firecrawl",
+    "composio_tools_count": 29,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/firecrawl",
+      "https://docs.firecrawl.dev"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 57,
+    "name": "Bright Data",
+    "category": "Data, SEO and Scraping",
+    "hint": "brightdata.com",
+    "description": "Proxy network and web data platform",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "self-serve signup, paid usage \u00b7 10 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/luminati-io/brightdata-mcp"
+    },
+    "composio_supported": true,
+    "composio_slug": "brightdata",
+    "composio_tools_count": 10,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/brightdata",
+      "https://docs.brightdata.com"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 58,
+    "name": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "hint": "github.com/sherlock-project/sherlock",
+    "description": "Open-source username OSINT CLI",
+    "auth_methods": [
+      "None"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "none",
+      "breadth": "narrow",
+      "notes": "local Python CLI, no API/auth"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://github.com/sherlock-project/sherlock"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 59,
+    "name": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "hint": "waterfall.io",
+    "description": "Contact/company intelligence data",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "unclear public self-serve API"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "access likely sales-gated",
+    "evidence": [
+      "https://waterfall.io"
+    ],
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "id": 60,
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "hint": "clay.com",
+    "description": "Data enrichment / GTM automation",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "HTTP API on higher plans"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "programmatic API limited to paid tiers",
+    "evidence": [
+      "https://www.clay.com"
+    ],
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "id": 61,
+    "name": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.github.com/rest",
+    "description": "Code hosting and collaboration platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST/GraphQL",
+      "breadth": "broad",
+      "notes": "PAT + OAuth + GraphQL \u00b7 871 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/github/github-mcp-server"
+    },
+    "composio_supported": true,
+    "composio_slug": "github",
+    "composio_tools_count": 871,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/github",
+      "https://docs.github.com/rest"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 62,
+    "name": "Vercel",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "vercel.com/docs/rest-api",
+    "description": "Frontend cloud / deployment platform",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "bearer token \u00b7 131 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://mcp.vercel.com"
+    },
+    "composio_supported": true,
+    "composio_slug": "vercel",
+    "composio_tools_count": 131,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/vercel",
+      "https://vercel.com/docs/rest-api"
+    ],
+    "confidence": "high",
+    "verified": true
+  },
+  {
+    "id": 63,
+    "name": "Netlify",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.netlify.com/api",
+    "description": "Web hosting and deployment platform",
+    "auth_methods": [
+      "Token",
+      "OAuth2"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "PAT / OAuth"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://docs.netlify.com/welcome/build-with-ai/netlify-mcp-server/"
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.netlify.com/api/get-started/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 64,
+    "name": "Cloudflare",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "developers.cloudflare.com/api",
+    "description": "CDN, DNS, security and edge platform",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "API tokens \u00b7 20 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/cloudflare/mcp-server-cloudflare"
+    },
+    "composio_supported": true,
+    "composio_slug": "cloudflare",
+    "composio_tools_count": 20,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/cloudflare",
+      "https://developers.cloudflare.com/api/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 65,
+    "name": "Supabase",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "supabase.com/docs",
+    "description": "Open-source Postgres backend platform",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "auto REST + Management API \u00b7 124 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/supabase-community/supabase-mcp"
+    },
+    "composio_supported": true,
+    "composio_slug": "supabase",
+    "composio_tools_count": 124,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/supabase",
+      "https://supabase.com/docs/reference/api"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 66,
+    "name": "Neo4j",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "neo4j.com/docs/api",
+    "description": "Graph database platform",
+    "auth_methods": [
+      "API key",
+      "Basic",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "Aura API + HTTP \u00b7 21 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/neo4j-contrib/mcp-neo4j"
+    },
+    "composio_supported": true,
+    "composio_slug": "neo4j",
+    "composio_tools_count": 21,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/neo4j",
+      "https://neo4j.com/docs/"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 67,
+    "name": "Snowflake",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.snowflake.com",
+    "description": "Cloud data warehouse platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST/SQL",
+      "breadth": "narrow",
+      "notes": "SQL API; needs account \u00b7 16 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/Snowflake-Labs/mcp"
+    },
+    "composio_supported": true,
+    "composio_slug": "snowflake",
+    "composio_tools_count": 16,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/snowflake",
+      "https://docs.snowflake.com/en/developer-guide/sql-api/index"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 68,
+    "name": "MongoDB Atlas",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "mongodb.com/docs/atlas/api",
+    "description": "Managed MongoDB cloud database",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "Admin API (HTTP Digest keys)"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/mongodb-js/mongodb-mcp-server"
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://www.mongodb.com/docs/atlas/api/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 69,
+    "name": "Datadog",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.datadoghq.com/api",
+    "description": "Monitoring and observability platform",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "API + APP keys \u00b7 63 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://docs.datadoghq.com/bits_ai/mcp_server/"
+    },
+    "composio_supported": true,
+    "composio_slug": "datadog",
+    "composio_tools_count": 63,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/datadog",
+      "https://docs.datadoghq.com/api/latest/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 70,
+    "name": "Sentry",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.sentry.io/api",
+    "description": "Error tracking and performance monitoring",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "auth tokens \u00b7 209 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/getsentry/sentry-mcp"
+    },
+    "composio_supported": true,
+    "composio_slug": "sentry",
+    "composio_tools_count": 209,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/sentry",
+      "https://docs.sentry.io/api/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 71,
+    "name": "Notion",
+    "category": "Productivity and Project Management",
+    "hint": "developers.notion.com",
+    "description": "Docs, wiki and database workspace",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "integration token / OAuth \u00b7 45 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/makenotion/notion-mcp-server"
+    },
+    "composio_supported": true,
+    "composio_slug": "notion",
+    "composio_tools_count": 45,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/notion",
+      "https://developers.notion.com/reference"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 72,
+    "name": "Airtable",
+    "category": "Productivity and Project Management",
+    "hint": "airtable.com/developers",
+    "description": "Spreadsheet-database hybrid platform",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "PAT / OAuth \u00b7 24 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "airtable",
+    "composio_tools_count": 24,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/airtable",
+      "https://airtable.com/developers/web/api/introduction"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 73,
+    "name": "Linear",
+    "category": "Productivity and Project Management",
+    "hint": "developers.linear.app",
+    "description": "Issue tracking for software teams",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "GraphQL",
+      "breadth": "medium",
+      "notes": "GraphQL API \u00b7 46 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://linear.app/docs/mcp"
+    },
+    "composio_supported": true,
+    "composio_slug": "linear",
+    "composio_tools_count": 46,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/linear",
+      "https://developers.linear.app/docs"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 74,
+    "name": "Jira",
+    "category": "Productivity and Project Management",
+    "hint": "developer.atlassian.com",
+    "description": "Atlassian issue and project tracking",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "REST v3 + OAuth \u00b7 97 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://www.atlassian.com/platform/remote-mcp-server"
+    },
+    "composio_supported": true,
+    "composio_slug": "jira",
+    "composio_tools_count": 97,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/jira",
+      "https://developer.atlassian.com/cloud/jira/platform/rest/v3/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 75,
+    "name": "Asana",
+    "category": "Productivity and Project Management",
+    "hint": "developers.asana.com",
+    "description": "Work and project management platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "PAT / OAuth \u00b7 153 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://developers.asana.com/docs/mcp-server"
+    },
+    "composio_supported": true,
+    "composio_slug": "asana",
+    "composio_tools_count": 153,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/asana",
+      "https://developers.asana.com/reference/rest-api-reference"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 76,
+    "name": "Monday.com",
+    "category": "Productivity and Project Management",
+    "hint": "developer.monday.com",
+    "description": "Work OS / project management platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "GraphQL",
+      "breadth": "broad",
+      "notes": "GraphQL API \u00b7 121 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://developer.monday.com/apps/docs/mondaycom-mcp-integration"
+    },
+    "composio_supported": true,
+    "composio_slug": "monday",
+    "composio_tools_count": 121,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/monday",
+      "https://developer.monday.com/api-reference"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 77,
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "hint": "clickup.com/api",
+    "description": "Project management / productivity app",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "personal token / OAuth \u00b7 162 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "clickup",
+    "composio_tools_count": 162,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/clickup",
+      "https://clickup.com/api"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 78,
+    "name": "Coda",
+    "category": "Productivity and Project Management",
+    "hint": "coda.io/developers",
+    "description": "Docs with tables and building blocks",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "API token \u00b7 109 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "coda",
+    "composio_tools_count": 109,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/coda",
+      "https://coda.io/developers/apis/v1"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 79,
+    "name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "hint": "smartsheet.com/developers",
+    "description": "Work/project management with sheets",
+    "auth_methods": [
+      "OAuth2",
+      "Token"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "OAuth + access token"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://smartsheet.redoc.ly/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 80,
+    "name": "Harvest",
+    "category": "Productivity and Project Management",
+    "hint": "help.getharvest.com/api-v2",
+    "description": "Time tracking and invoicing",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "PAT / OAuth \u00b7 57 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "harvest",
+    "composio_tools_count": 57,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/harvest",
+      "https://help.getharvest.com/api-v2/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 81,
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "hint": "stripe.com/docs/api",
+    "description": "Online payments and billing platform",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "secret key; test mode free \u00b7 425 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://github.com/stripe/agent-toolkit"
+    },
+    "composio_supported": true,
+    "composio_slug": "stripe",
+    "composio_tools_count": 425,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/stripe",
+      "https://stripe.com/docs/api"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 82,
+    "name": "Plaid",
+    "category": "Finance and Fintech",
+    "hint": "plaid.com/docs",
+    "description": "Bank account / financial data connectivity",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "free sandbox; prod needs approval"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "production access requires Plaid approval",
+    "evidence": [
+      "https://plaid.com/docs/api/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 83,
+    "name": "Binance",
+    "category": "Finance and Fintech",
+    "hint": "binance-docs.github.io",
+    "description": "Cryptocurrency exchange with trading APIs",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "HMAC-signed API keys"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "regional/regulatory restrictions apply",
+    "evidence": [
+      "https://binance-docs.github.io/apidocs/"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 84,
+    "name": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "hint": "paygent",
+    "description": "Payment gateway (NMI-powered)",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "merchant account required"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "requires merchant account/onboarding",
+    "evidence": [
+      "https://www.nmi.com/"
+    ],
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "id": 85,
+    "name": "iPayX",
+    "category": "Finance and Fintech",
+    "hint": "ipayx.ai/docs",
+    "description": "AI-driven payments/payouts platform",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "docs exist; onboarding likely gated"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "account onboarding likely required",
+    "evidence": [
+      "https://ipayx.ai/docs"
+    ],
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "id": 86,
+    "name": "QuickBooks",
+    "category": "Finance and Fintech",
+    "hint": "developer.intuit.com",
+    "description": "Accounting software for SMBs",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "broad",
+      "notes": "free dev + sandbox \u00b7 114 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "quickbooks",
+    "composio_tools_count": 114,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/quickbooks",
+      "https://developer.intuit.com/app/developer/qbo/docs/api/accounting/all-entities/account"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 87,
+    "name": "Xero",
+    "category": "Finance and Fintech",
+    "hint": "developer.xero.com",
+    "description": "Cloud accounting platform",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "free dev + demo org \u00b7 53 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "xero",
+    "composio_tools_count": 53,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/xero",
+      "https://developer.xero.com/documentation/api/accounting/overview"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 88,
+    "name": "Brex",
+    "category": "Finance and Fintech",
+    "hint": "developer.brex.com",
+    "description": "Corporate cards and spend management",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "must be a Brex customer \u00b7 84 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "brex",
+    "composio_tools_count": 84,
+    "buildability": "buildable_today",
+    "blocker": "requires Brex business account",
+    "evidence": [
+      "https://composio.dev/toolkit/brex",
+      "https://developer.brex.com"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 89,
+    "name": "Ramp",
+    "category": "Finance and Fintech",
+    "hint": "docs.ramp.com",
+    "description": "Corporate cards and spend automation",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "must be a Ramp customer \u00b7 88 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "ramp",
+    "composio_tools_count": 88,
+    "buildability": "buildable_today",
+    "blocker": "requires Ramp business account",
+    "evidence": [
+      "https://composio.dev/toolkit/ramp",
+      "https://docs.ramp.com"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 90,
+    "name": "PitchBook",
+    "category": "Finance and Fintech",
+    "hint": "pitchbook.com",
+    "description": "Private capital market research/data",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "medium",
+      "notes": "enterprise license"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "blocked",
+    "blocker": "enterprise license + no self-serve API",
+    "evidence": [
+      "https://pitchbook.com"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 91,
+    "name": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "hint": "cloud.google.com/gemini",
+    "description": "AI research/notebook assistant (Google)",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "none",
+      "breadth": "narrow",
+      "notes": "no public NotebookLM API; Gemini Enterprise adjacency"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "blocked",
+    "blocker": "no public NotebookLM API",
+    "evidence": [
+      "https://cloud.google.com/gemini"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 92,
+    "name": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "hint": "help.otter.ai",
+    "description": "Meeting transcription and notes AI",
+    "auth_methods": [
+      "OAuth2",
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "limited API; MCP server"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://help.otter.ai"
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "limited public API surface",
+    "evidence": [
+      "https://help.otter.ai"
+    ],
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "id": 93,
+    "name": "Fathom",
+    "category": "AI, Research and Media-native",
+    "hint": "fathom.video",
+    "description": "AI meeting recorder and notetaker",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "API in beta \u00b7 7 Composio tools"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": true,
+    "composio_slug": "fathom",
+    "composio_tools_count": 7,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://composio.dev/toolkit/fathom",
+      "https://fathom.video"
+    ],
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "id": 94,
+    "name": "Consensus",
+    "category": "AI, Research and Media-native",
+    "hint": "consensus.app",
+    "description": "AI research search over papers",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "contact_sales",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "OAuth/API requested, not fully public"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "public API access still limited",
+    "evidence": [
+      "https://consensus.app"
+    ],
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "id": 95,
+    "name": "Reducto",
+    "category": "AI, Research and Media-native",
+    "hint": "reducto.ai",
+    "description": "Document parsing/extraction API",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "trial",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": ""
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://docs.reducto.ai"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 96,
+    "name": "Devin",
+    "category": "AI, Research and Media-native",
+    "hint": "docs.devin.ai",
+    "description": "Autonomous AI software engineer",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "composio_catalog",
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "API + MCP; paid plan \u00b7 4 Composio tools"
+    },
+    "existing_mcp": {
+      "has": true,
+      "url": "https://docs.devin.ai/work-with-devin/devin-mcp"
+    },
+    "composio_supported": true,
+    "composio_slug": "devin_mcp",
+    "composio_tools_count": 4,
+    "buildability": "buildable_today",
+    "blocker": "requires paid Devin plan",
+    "evidence": [
+      "https://composio.dev/toolkit/devin_mcp",
+      "https://docs.devin.ai/api-reference/overview"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 97,
+    "name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "hint": "higgsfield.ai/cli",
+    "description": "AI content/video generation suite",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "gated",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "CLI/API, paid"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "partial",
+    "blocker": "paid; API surface limited/evolving",
+    "evidence": [
+      "https://higgsfield.ai"
+    ],
+    "confidence": "low",
+    "verified": false
+  },
+  {
+    "id": 98,
+    "name": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "hint": "github.com/mermaid-js/mermaid-cli",
+    "description": "Open-source diagram-as-code CLI",
+    "auth_methods": [
+      "None"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "none",
+      "breadth": "narrow",
+      "notes": "local npm CLI, no auth"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://github.com/mermaid-js/mermaid-cli"
+    ],
+    "confidence": "high",
+    "verified": false
+  },
+  {
+    "id": 99,
+    "name": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "hint": "transcriptapi.com",
+    "description": "YouTube transcript retrieval API",
+    "auth_methods": [
+      "API key"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "free",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "third-party transcript API"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "",
+    "evidence": [
+      "https://www.transcriptapi.com"
+    ],
+    "confidence": "med",
+    "verified": false
+  },
+  {
+    "id": 100,
+    "name": "Grain",
+    "category": "AI, Research and Media-native",
+    "hint": "grain.com",
+    "description": "AI meeting recorder and notes",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "auth_source": "llm_knowledge",
+    "access": "self_serve",
+    "gate_type": "paid",
+    "api_surface": {
+      "type": "REST",
+      "breadth": "narrow",
+      "notes": "API for customers"
+    },
+    "existing_mcp": {
+      "has": false,
+      "url": ""
+    },
+    "composio_supported": false,
+    "composio_slug": null,
+    "composio_tools_count": null,
+    "buildability": "buildable_today",
+    "blocker": "requires paid Grain plan",
+    "evidence": [
+      "https://grain.com"
+    ],
+    "confidence": "low",
+    "verified": false
+  }
+]

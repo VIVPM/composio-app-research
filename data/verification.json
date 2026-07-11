@@ -1,0 +1,794 @@
+{
+  "loop1_auth_crosscheck": {
+    "n": 55,
+    "exact_match_pct": 62,
+    "overlap_pct": 96,
+    "misses": [
+      {
+        "id": 27,
+        "name": "Telegram",
+        "guess": [
+          "Token"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": false,
+        "overlap": false
+      },
+      {
+        "id": 62,
+        "name": "Vercel",
+        "guess": [
+          "OAuth2",
+          "Token"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": false,
+        "overlap": false
+      }
+    ],
+    "rows": [
+      {
+        "id": 1,
+        "name": "Salesforce",
+        "guess": [
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 2,
+        "name": "HubSpot",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 3,
+        "name": "Pipedrive",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 4,
+        "name": "Attio",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 7,
+        "name": "Zoho CRM",
+        "guess": [
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 8,
+        "name": "Close",
+        "guess": [
+          "API key"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 11,
+        "name": "Zendesk",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 12,
+        "name": "Intercom",
+        "guess": [
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 13,
+        "name": "Freshdesk",
+        "guess": [
+          "API key"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 15,
+        "name": "Pylon",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 17,
+        "name": "Plain",
+        "guess": [
+          "API key"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 18,
+        "name": "Help Scout",
+        "guess": [
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 19,
+        "name": "Gorgias",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 21,
+        "name": "Slack",
+        "guess": [
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 26,
+        "name": "Discord",
+        "guess": [
+          "OAuth2",
+          "Token"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 27,
+        "name": "Telegram",
+        "guess": [
+          "Token"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": false,
+        "overlap": false
+      },
+      {
+        "id": 28,
+        "name": "WhatsApp Business",
+        "guess": [
+          "OAuth2",
+          "Token"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 31,
+        "name": "Google Ads",
+        "guess": [
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 32,
+        "name": "Meta Ads",
+        "guess": [
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 33,
+        "name": "LinkedIn Ads",
+        "guess": [
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 34,
+        "name": "GoHighLevel",
+        "guess": [
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 35,
+        "name": "Mailchimp",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 36,
+        "name": "Klaviyo",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 40,
+        "name": "SendGrid",
+        "guess": [
+          "API key"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 41,
+        "name": "Shopify",
+        "guess": [
+          "API key",
+          "OAuth2",
+          "Token"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 48,
+        "name": "Gumroad",
+        "guess": [
+          "OAuth2",
+          "Token"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 51,
+        "name": "DataForSEO",
+        "guess": [
+          "Basic"
+        ],
+        "truth": [
+          "Basic"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 53,
+        "name": "Ahrefs",
+        "guess": [
+          "API key"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 55,
+        "name": "Apify",
+        "guess": [
+          "API key"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 56,
+        "name": "Firecrawl",
+        "guess": [
+          "API key"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 57,
+        "name": "Bright Data",
+        "guess": [
+          "API key",
+          "Basic"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 61,
+        "name": "GitHub",
+        "guess": [
+          "OAuth2",
+          "Token"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 62,
+        "name": "Vercel",
+        "guess": [
+          "OAuth2",
+          "Token"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": false,
+        "overlap": false
+      },
+      {
+        "id": 64,
+        "name": "Cloudflare",
+        "guess": [
+          "API key",
+          "Token"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 65,
+        "name": "Supabase",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 66,
+        "name": "Neo4j",
+        "guess": [
+          "API key",
+          "Basic",
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "Basic",
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 67,
+        "name": "Snowflake",
+        "guess": [
+          "OAuth2",
+          "Token"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 69,
+        "name": "Datadog",
+        "guess": [
+          "API key"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 70,
+        "name": "Sentry",
+        "guess": [
+          "OAuth2",
+          "Token"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 71,
+        "name": "Notion",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 72,
+        "name": "Airtable",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 73,
+        "name": "Linear",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 74,
+        "name": "Jira",
+        "guess": [
+          "API key",
+          "Basic",
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 75,
+        "name": "Asana",
+        "guess": [
+          "OAuth2",
+          "Token"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 76,
+        "name": "Monday.com",
+        "guess": [
+          "OAuth2",
+          "Token"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 77,
+        "name": "ClickUp",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 78,
+        "name": "Coda",
+        "guess": [
+          "API key"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 80,
+        "name": "Harvest",
+        "guess": [
+          "OAuth2",
+          "Token"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": false,
+        "overlap": true
+      },
+      {
+        "id": 81,
+        "name": "Stripe",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 86,
+        "name": "QuickBooks",
+        "guess": [
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 87,
+        "name": "Xero",
+        "guess": [
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 88,
+        "name": "Brex",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 89,
+        "name": "Ramp",
+        "guess": [
+          "OAuth2"
+        ],
+        "truth": [
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 93,
+        "name": "Fathom",
+        "guess": [
+          "API key",
+          "OAuth2"
+        ],
+        "truth": [
+          "API key",
+          "OAuth2"
+        ],
+        "exact": true,
+        "overlap": true
+      },
+      {
+        "id": 96,
+        "name": "Devin",
+        "guess": [
+          "API key"
+        ],
+        "truth": [
+          "API key"
+        ],
+        "exact": true,
+        "overlap": true
+      }
+    ]
+  },
+  "loop2_sample": {
+    "sample_size": 20,
+    "checked": 20,
+    "by_field": {
+      "auth_methods": {
+        "checked": 18,
+        "correct": 18,
+        "pct": 100
+      },
+      "access": {
+        "checked": 19,
+        "correct": 19,
+        "pct": 100
+      },
+      "existing_mcp": {
+        "checked": 18,
+        "correct": 16,
+        "pct": 89
+      }
+    },
+    "overall_first_pass_pct": 96
+  },
+  "sample_ids": [
+    1,
+    2,
+    11,
+    12,
+    21,
+    22,
+    31,
+    32,
+    41,
+    42,
+    51,
+    52,
+    61,
+    62,
+    71,
+    72,
+    81,
+    82,
+    91,
+    92
+  ],
+  "notes": "Loop1 = independent first-pass auth guess vs Composio ground truth. Loop2 = docs opened by hand/browser for the sample; misses corrected in results.json."
+}
