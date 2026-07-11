@@ -33,15 +33,33 @@ def split_repo(repo: str):
     return parts[0], parts[1]
 
 
+def _github_auth_config_id(composio) -> str:
+    """Find the GitHub auth config, creating a Composio-managed one if none exists."""
+    for a in getattr(composio.auth_configs.list(), "items", []):
+        tk = getattr(a, "toolkit", None)
+        slug = tk.get("slug") if isinstance(tk, dict) else getattr(tk, "slug", tk)
+        if str(slug).lower() == "github":
+            return a.id
+    try:  # no config yet -> create a Composio-managed OAuth one
+        return composio.auth_configs.create(
+            toolkit="github", options={"type": "use_composio_managed_auth"}).id
+    except Exception as e:
+        raise SystemExit(
+            "No GitHub auth config found and auto-create failed "
+            f"({e}). Create one at https://platform.composio.dev (toolkit: GitHub).")
+
+
 def ensure_github(composio, user_id: str):
-    """Return an ACTIVE GitHub connection, authorizing in the browser if needed."""
+    """Ensure an ACTIVE GitHub connection, running the browser auth flow if needed."""
     existing = composio.connected_accounts.list(
         user_ids=[user_id], toolkit_slugs=["github"], statuses=["ACTIVE"])
     if getattr(existing, "items", None):
         return
-    req = composio.toolkits.authorize(user_id=user_id, toolkit="github")
+    # toolkits.authorize hits a retired endpoint for Composio-managed OAuth;
+    # the current flow is connected_accounts.link(user_id, auth_config_id).
+    req = composio.connected_accounts.link(
+        user_id=user_id, auth_config_id=_github_auth_config_id(composio))
     print(f"\nAuthorize GitHub for user '{user_id}' — open this URL:\n  {req.redirect_url}\n")
-    # the request object waits itself in this SDK; fall back to the accounts API
     if hasattr(req, "wait_for_connection"):
         req.wait_for_connection()
     else:
