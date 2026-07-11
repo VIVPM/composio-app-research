@@ -93,6 +93,10 @@
     border:1px solid var(--border);background:var(--surface);color:var(--ink)}
   .controls input{flex:1;min-width:180px}
   .tablewrap{overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface)}
+  .pager{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:16px}
+  .pginfo{font-size:13px;color:var(--ink-2);font-variant-numeric:tabular-nums}
+  .btn.pg[disabled]{opacity:.38;cursor:default}
+  .btn.pg[disabled]:hover{background:var(--surface)}
   table{border-collapse:collapse;width:100%;font-size:13px;min-width:820px}
   th,td{padding:9px 11px;text-align:left;border-bottom:1px solid var(--border);vertical-align:top}
   th{position:sticky;top:0;background:var(--surface-2);cursor:pointer;white-space:nowrap;font-size:12px;
@@ -227,6 +231,7 @@
   <div class="tablewrap">
     <table id="tbl"><thead><tr id="head"></tr></thead><tbody id="body"></tbody></table>
   </div>
+  <div class="pager" id="pager"></div>
 </section>
 
 <section id="agent">
@@ -437,7 +442,7 @@ const cols=[
   {k:'breadth',t:'API surface'},{k:'composio',t:'Composio'},{k:'mcp',t:'MCP'},
   {k:'evidence',t:'Evidence'},{k:'confidence',t:'Conf.'}];
 const order={narrow:1,medium:2,broad:3},bo={blocked:1,partial:2,buildable_today:3},co={low:1,med:2,high:3};
-let sortK='id',sortDir=1;
+let sortK='id',sortDir=1,page=1;const PAGE=10;
 function val(r,k){switch(k){
   case 'auth':return (r.auth_methods||[]).join(',');
   case 'access':return r.access||'';
@@ -451,7 +456,7 @@ function val(r,k){switch(k){
 document.getElementById('head').innerHTML=cols.map(c=>
   `<th data-k="${c.k}">${c.t} <span class="ar"></span></th>`).join('');
 document.querySelectorAll('#head th').forEach(th=>th.onclick=()=>{
-  const k=th.dataset.k; if(sortK===k)sortDir*=-1;else{sortK=k;sortDir=1;} render();});
+  const k=th.dataset.k; if(sortK===k)sortDir*=-1;else{sortK=k;sortDir=1;} page=1; render();});
 
 function accessTag(r){return r.access==='self_serve'
   ?`<span class="tag ss"><span class="dot" style="background:var(--good)"></span>Self-serve</span>`
@@ -475,7 +480,10 @@ function render(){
     return true;});
   rows.sort((a,b)=>{const x=val(a,sortK),y=val(b,sortK);
     return (x>y?1:x<y?-1:a.id-b.id)*sortDir;});
-  document.getElementById('body').innerHTML=rows.map(r=>{
+  const total=rows.length, pages=Math.max(1,Math.ceil(total/PAGE));
+  if(page>pages)page=pages; if(page<1)page=1;
+  const start=(page-1)*PAGE, pageRows=rows.slice(start,start+PAGE);
+  document.getElementById('body').innerHTML=pageRows.map(r=>{
     const ev=(r.evidence||[])[0];
     return `<tr>
       <td class="name">${r.name}<div class="cat" title="${r.description||''}">${r.description?r.description.slice(0,42):''}</div></td>
@@ -490,11 +498,22 @@ function render(){
       <td>${ev?`<a href="${ev}" target="_blank" rel="noopener">docs ↗</a>`:'<span class="no">—</span>'}</td>
       <td><span class="conf">${r.confidence||''}</span></td>
     </tr>`;}).join('');
-  document.getElementById('count').textContent=rows.length+' of 100';
+  document.getElementById('count').textContent=total+' of 100';
+  renderPager(total,pages,start,pageRows.length);
   document.querySelectorAll('#head th .ar').forEach((a,i)=>a.textContent=cols[i].k===sortK?(sortDir>0?'▲':'▼'):'');
 }
-['q','fAccess','fBuild','fComposio'].forEach(id=>document.getElementById(id).oninput=render);
-fCat.onchange=render;
+function renderPager(total,pages,start,shown){
+  const el=document.getElementById('pager');
+  if(!total){el.innerHTML='<span class="muted">No apps match your filters.</span>';return;}
+  el.innerHTML=`<button class="btn pg" id="pgPrev"${page<=1?' disabled':''}>← Prev</button>`+
+    `<span class="pginfo">${start+1}–${start+shown} of ${total} · page ${page} / ${pages}</span>`+
+    `<button class="btn pg" id="pgNext"${page>=pages?' disabled':''}>Next →</button>`;
+  const p=document.getElementById('pgPrev'),n=document.getElementById('pgNext');
+  if(p)p.onclick=()=>{if(page>1){page--;render();}};
+  if(n)n.onclick=()=>{if(page<pages){page++;render();}};
+}
+['q','fAccess','fBuild','fComposio'].forEach(id=>document.getElementById(id).oninput=()=>{page=1;render();});
+fCat.onchange=()=>{page=1;render();};
 render();
 
 /* ---------- verification numbers + hits table ---------- */
